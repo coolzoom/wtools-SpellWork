@@ -220,39 +220,42 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._dbConnect,
             this._status,
             this._ProcStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 704);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(872, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1163, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // _dbConnect
             // 
             this._dbConnect.Name = "_dbConnect";
-            this._dbConnect.Size = new System.Drawing.Size(0, 17);
+            this._dbConnect.Size = new System.Drawing.Size(0, 16);
             // 
             // _status
             // 
             this._status.Name = "_status";
-            this._status.Size = new System.Drawing.Size(0, 17);
+            this._status.Size = new System.Drawing.Size(0, 16);
             // 
             // _ProcStatus
             // 
             this._ProcStatus.Name = "_ProcStatus";
-            this._ProcStatus.Size = new System.Drawing.Size(0, 17);
+            this._ProcStatus.Size = new System.Drawing.Size(0, 16);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._tsmFile,
             this._tsmHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(872, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1163, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -263,27 +266,27 @@
             this._tsmSettings,
             this._tsmExit});
             this._tsmFile.Name = "_tsmFile";
-            this._tsmFile.Size = new System.Drawing.Size(37, 20);
+            this._tsmFile.Size = new System.Drawing.Size(48, 24);
             this._tsmFile.Text = "File";
             // 
             // _Connected
             // 
             this._Connected.Name = "_Connected";
-            this._Connected.Size = new System.Drawing.Size(132, 22);
+            this._Connected.Size = new System.Drawing.Size(172, 26);
             this._Connected.Text = "Connected";
             this._Connected.Click += new System.EventHandler(this.ConnectedClick);
             // 
             // _tsmSettings
             // 
             this._tsmSettings.Name = "_tsmSettings";
-            this._tsmSettings.Size = new System.Drawing.Size(132, 22);
+            this._tsmSettings.Size = new System.Drawing.Size(172, 26);
             this._tsmSettings.Text = "Setting";
             this._tsmSettings.Click += new System.EventHandler(this.SettingsClick);
             // 
             // _tsmExit
             // 
             this._tsmExit.Name = "_tsmExit";
-            this._tsmExit.Size = new System.Drawing.Size(132, 22);
+            this._tsmExit.Size = new System.Drawing.Size(172, 26);
             this._tsmExit.Text = "Exit";
             this._tsmExit.Click += new System.EventHandler(this.ExitClick);
             // 
@@ -292,13 +295,13 @@
             this._tsmHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._tsmAbout});
             this._tsmHelp.Name = "_tsmHelp";
-            this._tsmHelp.Size = new System.Drawing.Size(44, 20);
+            this._tsmHelp.Size = new System.Drawing.Size(58, 24);
             this._tsmHelp.Text = "Help";
             // 
             // _tsmAbout
             // 
             this._tsmAbout.Name = "_tsmAbout";
-            this._tsmAbout.Size = new System.Drawing.Size(113, 22);
+            this._tsmAbout.Size = new System.Drawing.Size(146, 26);
             this._tsmAbout.Text = "About..";
             // 
             // _ilPro
@@ -347,7 +350,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(19, 12);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(100, 25);
             this.textBox2.TabIndex = 0;
             // 
             // richTextBox1
@@ -371,10 +374,11 @@
             // _tpCompare
             // 
             this._tpCompare.Controls.Add(this._scCompareRoot);
-            this._tpCompare.Location = new System.Drawing.Point(4, 22);
+            this._tpCompare.Location = new System.Drawing.Point(4, 25);
+            this._tpCompare.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tpCompare.Name = "_tpCompare";
-            this._tpCompare.Padding = new System.Windows.Forms.Padding(3);
-            this._tpCompare.Size = new System.Drawing.Size(864, 557);
+            this._tpCompare.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._tpCompare.Size = new System.Drawing.Size(1155, 647);
             this._tpCompare.TabIndex = 4;
             this._tpCompare.Text = "Compare Spells";
             this._tpCompare.UseVisualStyleBackColor = true;
@@ -383,7 +387,8 @@
             // 
             this._scCompareRoot.Dock = System.Windows.Forms.DockStyle.Fill;
             this._scCompareRoot.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this._scCompareRoot.Location = new System.Drawing.Point(3, 3);
+            this._scCompareRoot.Location = new System.Drawing.Point(4, 3);
+            this._scCompareRoot.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._scCompareRoot.Name = "_scCompareRoot";
             // 
             // _scCompareRoot.Panel1
@@ -401,15 +406,17 @@
             this._scCompareRoot.Panel2.Controls.Add(this.label14);
             this._scCompareRoot.Panel2.Controls.Add(this._rtbCompareSpell2);
             this._scCompareRoot.Panel2.Controls.Add(this._tbCompareFilterSpell2);
-            this._scCompareRoot.Size = new System.Drawing.Size(858, 551);
+            this._scCompareRoot.Size = new System.Drawing.Size(1147, 641);
             this._scCompareRoot.SplitterDistance = 426;
+            this._scCompareRoot.SplitterWidth = 5;
             this._scCompareRoot.TabIndex = 0;
             // 
             // _bCompareSearch1
             // 
-            this._bCompareSearch1.Location = new System.Drawing.Point(238, 1);
+            this._bCompareSearch1.Location = new System.Drawing.Point(317, 1);
+            this._bCompareSearch1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bCompareSearch1.Name = "_bCompareSearch1";
-            this._bCompareSearch1.Size = new System.Drawing.Size(51, 23);
+            this._bCompareSearch1.Size = new System.Drawing.Size(68, 27);
             this._bCompareSearch1.TabIndex = 3;
             this._bCompareSearch1.Text = "Search";
             this._bCompareSearch1.UseVisualStyleBackColor = true;
@@ -418,17 +425,19 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 6);
+            this.label13.Location = new System.Drawing.Point(7, 7);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.Size = new System.Drawing.Size(87, 15);
             this.label13.TabIndex = 2;
             this.label13.Text = "ID or Name";
             // 
             // _tbCompareFilterSpell1
             // 
-            this._tbCompareFilterSpell1.Location = new System.Drawing.Point(86, 3);
+            this._tbCompareFilterSpell1.Location = new System.Drawing.Point(115, 3);
+            this._tbCompareFilterSpell1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbCompareFilterSpell1.Name = "_tbCompareFilterSpell1";
-            this._tbCompareFilterSpell1.Size = new System.Drawing.Size(146, 20);
+            this._tbCompareFilterSpell1.Size = new System.Drawing.Size(193, 25);
             this._tbCompareFilterSpell1.TabIndex = 1;
             this._tbCompareFilterSpell1.TextChanged += new System.EventHandler(this.CompareFilterSpellTextChanged);
             // 
@@ -439,17 +448,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._rtbCompareSpell1.BackColor = System.Drawing.Color.Gainsboro;
             this._rtbCompareSpell1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this._rtbCompareSpell1.Location = new System.Drawing.Point(0, 29);
+            this._rtbCompareSpell1.Location = new System.Drawing.Point(0, 33);
+            this._rtbCompareSpell1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._rtbCompareSpell1.Name = "_rtbCompareSpell1";
-            this._rtbCompareSpell1.Size = new System.Drawing.Size(423, 522);
+            this._rtbCompareSpell1.Size = new System.Drawing.Size(421, 607);
             this._rtbCompareSpell1.TabIndex = 0;
             this._rtbCompareSpell1.Text = "";
             // 
             // _bCompareSearch2
             // 
-            this._bCompareSearch2.Location = new System.Drawing.Point(243, 1);
+            this._bCompareSearch2.Location = new System.Drawing.Point(324, 1);
+            this._bCompareSearch2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bCompareSearch2.Name = "_bCompareSearch2";
-            this._bCompareSearch2.Size = new System.Drawing.Size(51, 23);
+            this._bCompareSearch2.Size = new System.Drawing.Size(68, 27);
             this._bCompareSearch2.TabIndex = 3;
             this._bCompareSearch2.Text = "Search";
             this._bCompareSearch2.UseVisualStyleBackColor = true;
@@ -458,9 +469,10 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(10, 6);
+            this.label14.Location = new System.Drawing.Point(13, 7);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 13);
+            this.label14.Size = new System.Drawing.Size(87, 15);
             this.label14.TabIndex = 2;
             this.label14.Text = "ID or Name";
             // 
@@ -471,27 +483,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._rtbCompareSpell2.BackColor = System.Drawing.Color.Gainsboro;
             this._rtbCompareSpell2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this._rtbCompareSpell2.Location = new System.Drawing.Point(3, 29);
+            this._rtbCompareSpell2.Location = new System.Drawing.Point(4, 33);
+            this._rtbCompareSpell2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._rtbCompareSpell2.Name = "_rtbCompareSpell2";
-            this._rtbCompareSpell2.Size = new System.Drawing.Size(425, 522);
+            this._rtbCompareSpell2.Size = new System.Drawing.Size(710, 607);
             this._rtbCompareSpell2.TabIndex = 0;
             this._rtbCompareSpell2.Text = "";
             // 
             // _tbCompareFilterSpell2
             // 
-            this._tbCompareFilterSpell2.Location = new System.Drawing.Point(91, 3);
+            this._tbCompareFilterSpell2.Location = new System.Drawing.Point(121, 3);
+            this._tbCompareFilterSpell2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbCompareFilterSpell2.Name = "_tbCompareFilterSpell2";
-            this._tbCompareFilterSpell2.Size = new System.Drawing.Size(146, 20);
+            this._tbCompareFilterSpell2.Size = new System.Drawing.Size(193, 25);
             this._tbCompareFilterSpell2.TabIndex = 1;
             this._tbCompareFilterSpell2.TextChanged += new System.EventHandler(this.CompareFilterSpellTextChanged);
             // 
             // _tpSpellInfo
             // 
             this._tpSpellInfo.Controls.Add(this.splitContainer1);
-            this._tpSpellInfo.Location = new System.Drawing.Point(4, 22);
+            this._tpSpellInfo.Location = new System.Drawing.Point(4, 25);
+            this._tpSpellInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tpSpellInfo.Name = "_tpSpellInfo";
-            this._tpSpellInfo.Padding = new System.Windows.Forms.Padding(3);
-            this._tpSpellInfo.Size = new System.Drawing.Size(864, 557);
+            this._tpSpellInfo.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._tpSpellInfo.Size = new System.Drawing.Size(1155, 647);
             this._tpSpellInfo.TabIndex = 0;
             this._tpSpellInfo.Text = "Spell Info";
             this._tpSpellInfo.UseVisualStyleBackColor = true;
@@ -503,7 +518,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Location = new System.Drawing.Point(4, 3);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -514,8 +530,9 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(858, 551);
-            this.splitContainer1.SplitterDistance = 460;
+            this.splitContainer1.Size = new System.Drawing.Size(1144, 639);
+            this.splitContainer1.SplitterDistance = 745;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // _rtSpellInfo
@@ -524,9 +541,10 @@
             this._rtSpellInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this._rtSpellInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._rtSpellInfo.Location = new System.Drawing.Point(0, 0);
+            this._rtSpellInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._rtSpellInfo.Name = "_rtSpellInfo";
             this._rtSpellInfo.ReadOnly = true;
-            this._rtSpellInfo.Size = new System.Drawing.Size(460, 551);
+            this._rtSpellInfo.Size = new System.Drawing.Size(745, 639);
             this._rtSpellInfo.TabIndex = 0;
             this._rtSpellInfo.Text = "";
             // 
@@ -537,8 +555,10 @@
             this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(394, 551);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(394, 639);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -555,10 +575,11 @@
             this._lvSpellList.FullRowSelect = true;
             this._lvSpellList.GridLines = true;
             this._lvSpellList.HideSelection = false;
-            this._lvSpellList.Location = new System.Drawing.Point(6, 351);
+            this._lvSpellList.Location = new System.Drawing.Point(8, 405);
+            this._lvSpellList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._lvSpellList.MultiSelect = false;
             this._lvSpellList.Name = "_lvSpellList";
-            this._lvSpellList.Size = new System.Drawing.Size(388, 194);
+            this._lvSpellList.Size = new System.Drawing.Size(385, 226);
             this._lvSpellList.TabIndex = 7;
             this._lvSpellList.UseCompatibleStateImageBehavior = false;
             this._lvSpellList.View = System.Windows.Forms.View.Details;
@@ -575,9 +596,9 @@
             // 
             this.chSpellName.Text = "Name";
             this.chSpellName.Width = 250;
-            //
+            // 
             // chMiscID
-            //
+            // 
             this.chMiscID.Text = "MiscID";
             this.chMiscID.Width = 64;
             // 
@@ -592,9 +613,11 @@
             this._gSpellFilter.Controls.Add(this._cbSpellEffect);
             this._gSpellFilter.Controls.Add(this._cbSpellAura);
             this._gSpellFilter.Controls.Add(this._cbSpellFamilyName);
-            this._gSpellFilter.Location = new System.Drawing.Point(2, 81);
+            this._gSpellFilter.Location = new System.Drawing.Point(3, 93);
+            this._gSpellFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._gSpellFilter.Name = "_gSpellFilter";
-            this._gSpellFilter.Size = new System.Drawing.Size(392, 264);
+            this._gSpellFilter.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._gSpellFilter.Size = new System.Drawing.Size(392, 305);
             this._gSpellFilter.TabIndex = 8;
             this._gSpellFilter.TabStop = false;
             this._gSpellFilter.Text = "Spell Filter";
@@ -615,9 +638,11 @@
             this._gbAdvansedSearch.Controls.Add(this._tbAdvancedEffectFilter1Val);
             this._gbAdvansedSearch.Controls.Add(this._cbAdvancedEffectFilter2);
             this._gbAdvansedSearch.Controls.Add(this._cbAdvancedEffectFilter1);
-            this._gbAdvansedSearch.Location = new System.Drawing.Point(3, 135);
+            this._gbAdvansedSearch.Location = new System.Drawing.Point(4, 156);
+            this._gbAdvansedSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._gbAdvansedSearch.Name = "_gbAdvansedSearch";
-            this._gbAdvansedSearch.Size = new System.Drawing.Size(383, 123);
+            this._gbAdvansedSearch.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._gbAdvansedSearch.Size = new System.Drawing.Size(380, 142);
             this._gbAdvansedSearch.TabIndex = 6;
             this._gbAdvansedSearch.TabStop = false;
             this._gbAdvansedSearch.Text = "Advanced Filter";
@@ -628,9 +653,10 @@
             this._cbAdvancedFilter2CompareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedFilter2CompareType.DropDownWidth = 160;
             this._cbAdvancedFilter2CompareType.FormattingEnabled = true;
-            this._cbAdvancedFilter2CompareType.Location = new System.Drawing.Point(210, 41);
+            this._cbAdvancedFilter2CompareType.Location = new System.Drawing.Point(149, 47);
+            this._cbAdvancedFilter2CompareType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedFilter2CompareType.Name = "_cbAdvancedFilter2CompareType";
-            this._cbAdvancedFilter2CompareType.Size = new System.Drawing.Size(76, 21);
+            this._cbAdvancedFilter2CompareType.Size = new System.Drawing.Size(100, 23);
             this._cbAdvancedFilter2CompareType.TabIndex = 3;
             // 
             // _cbAdvancedFilter1CompareType
@@ -639,26 +665,29 @@
             this._cbAdvancedFilter1CompareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedFilter1CompareType.DropDownWidth = 160;
             this._cbAdvancedFilter1CompareType.FormattingEnabled = true;
-            this._cbAdvancedFilter1CompareType.Location = new System.Drawing.Point(210, 15);
+            this._cbAdvancedFilter1CompareType.Location = new System.Drawing.Point(149, 17);
+            this._cbAdvancedFilter1CompareType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedFilter1CompareType.Name = "_cbAdvancedFilter1CompareType";
-            this._cbAdvancedFilter1CompareType.Size = new System.Drawing.Size(76, 21);
+            this._cbAdvancedFilter1CompareType.Size = new System.Drawing.Size(100, 23);
             this._cbAdvancedFilter1CompareType.TabIndex = 2;
             // 
             // _tbAdvancedFilter2Val
             // 
             this._tbAdvancedFilter2Val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbAdvancedFilter2Val.Location = new System.Drawing.Point(292, 43);
+            this._tbAdvancedFilter2Val.Location = new System.Drawing.Point(258, 50);
+            this._tbAdvancedFilter2Val.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbAdvancedFilter2Val.Name = "_tbAdvancedFilter2Val";
-            this._tbAdvancedFilter2Val.Size = new System.Drawing.Size(85, 20);
+            this._tbAdvancedFilter2Val.Size = new System.Drawing.Size(112, 25);
             this._tbAdvancedFilter2Val.TabIndex = 1;
             this._tbAdvancedFilter2Val.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbAdvansedFilterValKeyDown);
             // 
             // _tbAdvancedFilter1Val
             // 
             this._tbAdvancedFilter1Val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbAdvancedFilter1Val.Location = new System.Drawing.Point(292, 15);
+            this._tbAdvancedFilter1Val.Location = new System.Drawing.Point(258, 17);
+            this._tbAdvancedFilter1Val.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbAdvancedFilter1Val.Name = "_tbAdvancedFilter1Val";
-            this._tbAdvancedFilter1Val.Size = new System.Drawing.Size(85, 20);
+            this._tbAdvancedFilter1Val.Size = new System.Drawing.Size(112, 25);
             this._tbAdvancedFilter1Val.TabIndex = 1;
             this._tbAdvancedFilter1Val.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbAdvansedFilterValKeyDown);
             // 
@@ -670,9 +699,10 @@
             this._cbAdvancedFilter2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedFilter2.FormattingEnabled = true;
             this._cbAdvancedFilter2.IntegralHeight = false;
-            this._cbAdvancedFilter2.Location = new System.Drawing.Point(1, 42);
+            this._cbAdvancedFilter2.Location = new System.Drawing.Point(1, 48);
+            this._cbAdvancedFilter2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedFilter2.Name = "_cbAdvancedFilter2";
-            this._cbAdvancedFilter2.Size = new System.Drawing.Size(203, 21);
+            this._cbAdvancedFilter2.Size = new System.Drawing.Size(138, 23);
             this._cbAdvancedFilter2.TabIndex = 0;
             // 
             // _cbAdvancedFilter1
@@ -683,9 +713,10 @@
             this._cbAdvancedFilter1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedFilter1.FormattingEnabled = true;
             this._cbAdvancedFilter1.IntegralHeight = false;
-            this._cbAdvancedFilter1.Location = new System.Drawing.Point(1, 15);
+            this._cbAdvancedFilter1.Location = new System.Drawing.Point(1, 17);
+            this._cbAdvancedFilter1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedFilter1.Name = "_cbAdvancedFilter1";
-            this._cbAdvancedFilter1.Size = new System.Drawing.Size(203, 21);
+            this._cbAdvancedFilter1.Size = new System.Drawing.Size(138, 23);
             this._cbAdvancedFilter1.TabIndex = 0;
             // 
             // _cbAdvancedEffectFilter2CompareType
@@ -694,9 +725,10 @@
             this._cbAdvancedEffectFilter2CompareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedEffectFilter2CompareType.DropDownWidth = 160;
             this._cbAdvancedEffectFilter2CompareType.FormattingEnabled = true;
-            this._cbAdvancedEffectFilter2CompareType.Location = new System.Drawing.Point(209, 95);
+            this._cbAdvancedEffectFilter2CompareType.Location = new System.Drawing.Point(148, 110);
+            this._cbAdvancedEffectFilter2CompareType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedEffectFilter2CompareType.Name = "_cbAdvancedEffectFilter2CompareType";
-            this._cbAdvancedEffectFilter2CompareType.Size = new System.Drawing.Size(76, 21);
+            this._cbAdvancedEffectFilter2CompareType.Size = new System.Drawing.Size(100, 23);
             this._cbAdvancedEffectFilter2CompareType.TabIndex = 3;
             // 
             // _cbAdvancedEffectFilter1CompareType
@@ -705,26 +737,29 @@
             this._cbAdvancedEffectFilter1CompareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedEffectFilter1CompareType.DropDownWidth = 160;
             this._cbAdvancedEffectFilter1CompareType.FormattingEnabled = true;
-            this._cbAdvancedEffectFilter1CompareType.Location = new System.Drawing.Point(210, 68);
+            this._cbAdvancedEffectFilter1CompareType.Location = new System.Drawing.Point(149, 78);
+            this._cbAdvancedEffectFilter1CompareType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedEffectFilter1CompareType.Name = "_cbAdvancedEffectFilter1CompareType";
-            this._cbAdvancedEffectFilter1CompareType.Size = new System.Drawing.Size(76, 21);
+            this._cbAdvancedEffectFilter1CompareType.Size = new System.Drawing.Size(100, 23);
             this._cbAdvancedEffectFilter1CompareType.TabIndex = 2;
             // 
             // _tbAdvancedEffectFilter2Val
             // 
             this._tbAdvancedEffectFilter2Val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbAdvancedEffectFilter2Val.Location = new System.Drawing.Point(292, 96);
+            this._tbAdvancedEffectFilter2Val.Location = new System.Drawing.Point(258, 111);
+            this._tbAdvancedEffectFilter2Val.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbAdvancedEffectFilter2Val.Name = "_tbAdvancedEffectFilter2Val";
-            this._tbAdvancedEffectFilter2Val.Size = new System.Drawing.Size(85, 20);
+            this._tbAdvancedEffectFilter2Val.Size = new System.Drawing.Size(112, 25);
             this._tbAdvancedEffectFilter2Val.TabIndex = 1;
             this._tbAdvancedEffectFilter2Val.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbAdvansedFilterValKeyDown);
             // 
             // _tbAdvancedEffectFilter1Val
             // 
             this._tbAdvancedEffectFilter1Val.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbAdvancedEffectFilter1Val.Location = new System.Drawing.Point(292, 68);
+            this._tbAdvancedEffectFilter1Val.Location = new System.Drawing.Point(258, 78);
+            this._tbAdvancedEffectFilter1Val.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbAdvancedEffectFilter1Val.Name = "_tbAdvancedEffectFilter1Val";
-            this._tbAdvancedEffectFilter1Val.Size = new System.Drawing.Size(85, 20);
+            this._tbAdvancedEffectFilter1Val.Size = new System.Drawing.Size(112, 25);
             this._tbAdvancedEffectFilter1Val.TabIndex = 1;
             this._tbAdvancedEffectFilter1Val.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbAdvansedFilterValKeyDown);
             // 
@@ -735,9 +770,10 @@
             this._cbAdvancedEffectFilter2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedEffectFilter2.FormattingEnabled = true;
             this._cbAdvancedEffectFilter2.IntegralHeight = false;
-            this._cbAdvancedEffectFilter2.Location = new System.Drawing.Point(1, 95);
+            this._cbAdvancedEffectFilter2.Location = new System.Drawing.Point(-130, 110);
+            this._cbAdvancedEffectFilter2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedEffectFilter2.Name = "_cbAdvancedEffectFilter2";
-            this._cbAdvancedEffectFilter2.Size = new System.Drawing.Size(203, 21);
+            this._cbAdvancedEffectFilter2.Size = new System.Drawing.Size(269, 23);
             this._cbAdvancedEffectFilter2.TabIndex = 0;
             // 
             // _cbAdvancedEffectFilter1
@@ -747,9 +783,10 @@
             this._cbAdvancedEffectFilter1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbAdvancedEffectFilter1.FormattingEnabled = true;
             this._cbAdvancedEffectFilter1.IntegralHeight = false;
-            this._cbAdvancedEffectFilter1.Location = new System.Drawing.Point(1, 68);
+            this._cbAdvancedEffectFilter1.Location = new System.Drawing.Point(-130, 78);
+            this._cbAdvancedEffectFilter1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbAdvancedEffectFilter1.Name = "_cbAdvancedEffectFilter1";
-            this._cbAdvancedEffectFilter1.Size = new System.Drawing.Size(203, 21);
+            this._cbAdvancedEffectFilter1.Size = new System.Drawing.Size(269, 23);
             this._cbAdvancedEffectFilter1.TabIndex = 0;
             // 
             // _cbTarget2
@@ -761,9 +798,10 @@
             this._cbTarget2.DropDownWidth = 302;
             this._cbTarget2.FormattingEnabled = true;
             this._cbTarget2.IntegralHeight = false;
-            this._cbTarget2.Location = new System.Drawing.Point(4, 111);
+            this._cbTarget2.Location = new System.Drawing.Point(5, 128);
+            this._cbTarget2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbTarget2.Name = "_cbTarget2";
-            this._cbTarget2.Size = new System.Drawing.Size(385, 21);
+            this._cbTarget2.Size = new System.Drawing.Size(381, 23);
             this._cbTarget2.TabIndex = 5;
             this._cbTarget2.SelectedIndexChanged += new System.EventHandler(this.CbSpellFamilyNamesSelectedIndexChanged);
             // 
@@ -776,9 +814,10 @@
             this._cbTarget1.DropDownWidth = 302;
             this._cbTarget1.FormattingEnabled = true;
             this._cbTarget1.IntegralHeight = false;
-            this._cbTarget1.Location = new System.Drawing.Point(4, 87);
+            this._cbTarget1.Location = new System.Drawing.Point(5, 100);
+            this._cbTarget1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbTarget1.Name = "_cbTarget1";
-            this._cbTarget1.Size = new System.Drawing.Size(385, 21);
+            this._cbTarget1.Size = new System.Drawing.Size(381, 23);
             this._cbTarget1.TabIndex = 5;
             this._cbTarget1.SelectedIndexChanged += new System.EventHandler(this.CbSpellFamilyNamesSelectedIndexChanged);
             // 
@@ -792,9 +831,10 @@
             this._cbSpellEffect.FormattingEnabled = true;
             this._cbSpellEffect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this._cbSpellEffect.IntegralHeight = false;
-            this._cbSpellEffect.Location = new System.Drawing.Point(4, 62);
+            this._cbSpellEffect.Location = new System.Drawing.Point(5, 72);
+            this._cbSpellEffect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbSpellEffect.Name = "_cbSpellEffect";
-            this._cbSpellEffect.Size = new System.Drawing.Size(385, 21);
+            this._cbSpellEffect.Size = new System.Drawing.Size(381, 23);
             this._cbSpellEffect.TabIndex = 4;
             this._cbSpellEffect.SelectedIndexChanged += new System.EventHandler(this.CbSpellFamilyNamesSelectedIndexChanged);
             // 
@@ -807,9 +847,10 @@
             this._cbSpellAura.DropDownWidth = 302;
             this._cbSpellAura.FormattingEnabled = true;
             this._cbSpellAura.IntegralHeight = false;
-            this._cbSpellAura.Location = new System.Drawing.Point(4, 38);
+            this._cbSpellAura.Location = new System.Drawing.Point(5, 44);
+            this._cbSpellAura.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbSpellAura.Name = "_cbSpellAura";
-            this._cbSpellAura.Size = new System.Drawing.Size(385, 21);
+            this._cbSpellAura.Size = new System.Drawing.Size(381, 23);
             this._cbSpellAura.TabIndex = 3;
             this._cbSpellAura.SelectedIndexChanged += new System.EventHandler(this.CbSpellFamilyNamesSelectedIndexChanged);
             // 
@@ -822,10 +863,11 @@
             this._cbSpellFamilyName.DropDownWidth = 302;
             this._cbSpellFamilyName.FormattingEnabled = true;
             this._cbSpellFamilyName.IntegralHeight = false;
-            this._cbSpellFamilyName.ItemHeight = 13;
-            this._cbSpellFamilyName.Location = new System.Drawing.Point(4, 14);
+            this._cbSpellFamilyName.ItemHeight = 15;
+            this._cbSpellFamilyName.Location = new System.Drawing.Point(5, 16);
+            this._cbSpellFamilyName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbSpellFamilyName.Name = "_cbSpellFamilyName";
-            this._cbSpellFamilyName.Size = new System.Drawing.Size(385, 21);
+            this._cbSpellFamilyName.Size = new System.Drawing.Size(381, 23);
             this._cbSpellFamilyName.TabIndex = 2;
             this._cbSpellFamilyName.SelectedIndexChanged += new System.EventHandler(this.CbSpellFamilyNamesSelectedIndexChanged);
             // 
@@ -842,8 +884,10 @@
             this.groupBox7.Controls.Add(this._tbSearchIcon);
             this.groupBox7.Controls.Add(this._tbSearchId);
             this.groupBox7.Location = new System.Drawing.Point(0, 2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(394, 89);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox7.Size = new System.Drawing.Size(394, 103);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Spell Search";
@@ -851,36 +895,40 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 60);
+            this.label6.Location = new System.Drawing.Point(8, 69);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.Size = new System.Drawing.Size(111, 15);
             this.label6.TabIndex = 2;
             this.label6.Text = "Attributes&&X:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 38);
+            this.label5.Location = new System.Drawing.Point(8, 44);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
+            this.label5.Size = new System.Drawing.Size(127, 15);
             this.label5.TabIndex = 2;
             this.label5.Text = "IconFileDataID:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Location = new System.Drawing.Point(8, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(95, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "ID or Name:";
             // 
             // _bSearch
             // 
             this._bSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._bSearch.Location = new System.Drawing.Point(343, 11);
+            this._bSearch.Location = new System.Drawing.Point(326, 13);
+            this._bSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSearch.Name = "_bSearch";
-            this._bSearch.Size = new System.Drawing.Size(50, 23);
+            this._bSearch.Size = new System.Drawing.Size(67, 27);
             this._bSearch.TabIndex = 1;
             this._bSearch.Text = "Search";
             this._bSearch.UseVisualStyleBackColor = true;
@@ -890,9 +938,10 @@
             // 
             this._tbSearchAttributes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbSearchAttributes.Location = new System.Drawing.Point(93, 57);
+            this._tbSearchAttributes.Location = new System.Drawing.Point(124, 66);
+            this._tbSearchAttributes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSearchAttributes.Name = "_tbSearchAttributes";
-            this._tbSearchAttributes.Size = new System.Drawing.Size(245, 20);
+            this._tbSearchAttributes.Size = new System.Drawing.Size(194, 25);
             this._tbSearchAttributes.TabIndex = 0;
             this._tbSearchAttributes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSearchIdKeyDown);
             // 
@@ -900,9 +949,10 @@
             // 
             this._tbSearchIcon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbSearchIcon.Location = new System.Drawing.Point(93, 35);
+            this._tbSearchIcon.Location = new System.Drawing.Point(124, 40);
+            this._tbSearchIcon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSearchIcon.Name = "_tbSearchIcon";
-            this._tbSearchIcon.Size = new System.Drawing.Size(245, 20);
+            this._tbSearchIcon.Size = new System.Drawing.Size(194, 25);
             this._tbSearchIcon.TabIndex = 0;
             this._tbSearchIcon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSearchIdKeyDown);
             // 
@@ -910,9 +960,10 @@
             // 
             this._tbSearchId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbSearchId.Location = new System.Drawing.Point(93, 13);
+            this._tbSearchId.Location = new System.Drawing.Point(124, 15);
+            this._tbSearchId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSearchId.Name = "_tbSearchId";
-            this._tbSearchId.Size = new System.Drawing.Size(245, 20);
+            this._tbSearchId.Size = new System.Drawing.Size(194, 25);
             this._tbSearchId.TabIndex = 0;
             this._tbSearchId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSearchIdKeyDown);
             // 
@@ -923,19 +974,21 @@
             this.tabControl1.Controls.Add(this._tpCompare);
             this.tabControl1.Controls.Add(this._tpSqlData);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 24);
+            this.tabControl1.Location = new System.Drawing.Point(0, 28);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(872, 583);
+            this.tabControl1.Size = new System.Drawing.Size(1163, 676);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1SelectedIndexChanged);
             // 
             // _tpSpellProcInfo
             // 
             this._tpSpellProcInfo.Controls.Add(this.splitContainer2);
-            this._tpSpellProcInfo.Location = new System.Drawing.Point(4, 22);
+            this._tpSpellProcInfo.Location = new System.Drawing.Point(4, 25);
+            this._tpSpellProcInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tpSpellProcInfo.Name = "_tpSpellProcInfo";
-            this._tpSpellProcInfo.Size = new System.Drawing.Size(864, 557);
+            this._tpSpellProcInfo.Size = new System.Drawing.Size(1155, 647);
             this._tpSpellProcInfo.TabIndex = 2;
             this._tpSpellProcInfo.Text = "Spell Proc Event";
             this._tpSpellProcInfo.UseVisualStyleBackColor = true;
@@ -944,6 +997,7 @@
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -955,8 +1009,9 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.splitContainer2.Panel2.Controls.Add(this._lvProcAdditionalInfo);
-            this.splitContainer2.Size = new System.Drawing.Size(864, 557);
-            this.splitContainer2.SplitterDistance = 489;
+            this.splitContainer2.Size = new System.Drawing.Size(1155, 647);
+            this.splitContainer2.SplitterDistance = 568;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
@@ -965,6 +1020,7 @@
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -978,8 +1034,9 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer3.Size = new System.Drawing.Size(864, 489);
+            this.splitContainer3.Size = new System.Drawing.Size(1155, 568);
             this.splitContainer3.SplitterDistance = 241;
+            this.splitContainer3.SplitterWidth = 5;
             this.splitContainer3.TabIndex = 0;
             // 
             // groupBox5
@@ -988,9 +1045,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox5.Controls.Add(this._clbProcFlags);
-            this.groupBox5.Location = new System.Drawing.Point(3, 128);
+            this.groupBox5.Location = new System.Drawing.Point(4, 148);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(858, 115);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox5.Size = new System.Drawing.Size(1147, 133);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Spell Proc Flags";
@@ -1001,10 +1060,11 @@
             this._clbProcFlags.ColumnWidth = 170;
             this._clbProcFlags.Dock = System.Windows.Forms.DockStyle.Fill;
             this._clbProcFlags.FormattingEnabled = true;
-            this._clbProcFlags.Location = new System.Drawing.Point(3, 16);
+            this._clbProcFlags.Location = new System.Drawing.Point(4, 21);
+            this._clbProcFlags.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._clbProcFlags.MultiColumn = true;
             this._clbProcFlags.Name = "_clbProcFlags";
-            this._clbProcFlags.Size = new System.Drawing.Size(852, 96);
+            this._clbProcFlags.Size = new System.Drawing.Size(1139, 109);
             this._clbProcFlags.TabIndex = 0;
             this._clbProcFlags.SelectedIndexChanged += new System.EventHandler(this.ClbSchoolsSelectedIndexChanged);
             // 
@@ -1014,9 +1074,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox4.Controls.Add(this._clbProcFlagEx);
-            this.groupBox4.Location = new System.Drawing.Point(3, 60);
+            this.groupBox4.Location = new System.Drawing.Point(4, 69);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(858, 75);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox4.Size = new System.Drawing.Size(1147, 87);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Spell Proc Ex";
@@ -1027,10 +1089,11 @@
             this._clbProcFlagEx.ColumnWidth = 120;
             this._clbProcFlagEx.Dock = System.Windows.Forms.DockStyle.Fill;
             this._clbProcFlagEx.FormattingEnabled = true;
-            this._clbProcFlagEx.Location = new System.Drawing.Point(3, 16);
+            this._clbProcFlagEx.Location = new System.Drawing.Point(4, 21);
+            this._clbProcFlagEx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._clbProcFlagEx.MultiColumn = true;
             this._clbProcFlagEx.Name = "_clbProcFlagEx";
-            this._clbProcFlagEx.Size = new System.Drawing.Size(852, 56);
+            this._clbProcFlagEx.Size = new System.Drawing.Size(1139, 63);
             this._clbProcFlagEx.TabIndex = 3;
             this._clbProcFlagEx.SelectedIndexChanged += new System.EventHandler(this.ClbSchoolsSelectedIndexChanged);
             // 
@@ -1048,9 +1111,11 @@
             this._gSpellProcEvent.Controls.Add(this.label3);
             this._gSpellProcEvent.Controls.Add(this._tbCooldown);
             this._gSpellProcEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._gSpellProcEvent.Location = new System.Drawing.Point(4, 0);
+            this._gSpellProcEvent.Location = new System.Drawing.Point(5, 0);
+            this._gSpellProcEvent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._gSpellProcEvent.Name = "_gSpellProcEvent";
-            this._gSpellProcEvent.Size = new System.Drawing.Size(857, 63);
+            this._gSpellProcEvent.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this._gSpellProcEvent.Size = new System.Drawing.Size(1146, 73);
             this._gSpellProcEvent.TabIndex = 8;
             this._gSpellProcEvent.TabStop = false;
             this._gSpellProcEvent.Text = "Spell Proc Event";
@@ -1061,10 +1126,11 @@
             this._clbSchools.ColumnWidth = 100;
             this._clbSchools.Dock = System.Windows.Forms.DockStyle.Right;
             this._clbSchools.FormattingEnabled = true;
-            this._clbSchools.Location = new System.Drawing.Point(391, 16);
+            this._clbSchools.Location = new System.Drawing.Point(526, 21);
+            this._clbSchools.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._clbSchools.MultiColumn = true;
             this._clbSchools.Name = "_clbSchools";
-            this._clbSchools.Size = new System.Drawing.Size(463, 44);
+            this._clbSchools.Size = new System.Drawing.Size(616, 49);
             this._clbSchools.TabIndex = 5;
             this._clbSchools.SelectedIndexChanged += new System.EventHandler(this.ClbSchoolsSelectedIndexChanged);
             // 
@@ -1074,27 +1140,30 @@
             this._cbProcFitstSpellFamily.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcFitstSpellFamily.FormattingEnabled = true;
             this._cbProcFitstSpellFamily.IntegralHeight = false;
-            this._cbProcFitstSpellFamily.Location = new System.Drawing.Point(3, 14);
+            this._cbProcFitstSpellFamily.Location = new System.Drawing.Point(4, 16);
+            this._cbProcFitstSpellFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcFitstSpellFamily.Name = "_cbProcFitstSpellFamily";
-            this._cbProcFitstSpellFamily.Size = new System.Drawing.Size(342, 21);
+            this._cbProcFitstSpellFamily.Size = new System.Drawing.Size(455, 23);
             this._cbProcFitstSpellFamily.TabIndex = 4;
             this._cbProcFitstSpellFamily.SelectedIndexChanged += new System.EventHandler(this.ClbSchoolsSelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 41);
+            this.label1.Location = new System.Drawing.Point(4, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "PPM";
             // 
             // _tbPPM
             // 
-            this._tbPPM.Location = new System.Drawing.Point(39, 38);
+            this._tbPPM.Location = new System.Drawing.Point(52, 44);
+            this._tbPPM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbPPM.MaxLength = 10;
             this._tbPPM.Name = "_tbPPM";
-            this._tbPPM.Size = new System.Drawing.Size(60, 20);
+            this._tbPPM.Size = new System.Drawing.Size(79, 25);
             this._tbPPM.TabIndex = 7;
             this._tbPPM.TextChanged += new System.EventHandler(this.TbCooldownTextChanged);
             this._tbPPM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxKeyPress);
@@ -1102,18 +1171,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 41);
+            this.label2.Location = new System.Drawing.Point(140, 47);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 6;
             this.label2.Text = "Chance";
             // 
             // _tbChance
             // 
-            this._tbChance.Location = new System.Drawing.Point(155, 38);
+            this._tbChance.Location = new System.Drawing.Point(207, 44);
+            this._tbChance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbChance.MaxLength = 10;
             this._tbChance.Name = "_tbChance";
-            this._tbChance.Size = new System.Drawing.Size(60, 20);
+            this._tbChance.Size = new System.Drawing.Size(79, 25);
             this._tbChance.TabIndex = 7;
             this._tbChance.TextChanged += new System.EventHandler(this.TbCooldownTextChanged);
             this._tbChance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxKeyPress);
@@ -1121,18 +1192,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 41);
+            this.label3.Location = new System.Drawing.Point(300, 47);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(71, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Cooldown";
             // 
             // _tbCooldown
             // 
-            this._tbCooldown.Location = new System.Drawing.Point(285, 38);
+            this._tbCooldown.Location = new System.Drawing.Point(380, 44);
+            this._tbCooldown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbCooldown.MaxLength = 10;
             this._tbCooldown.Name = "_tbCooldown";
-            this._tbCooldown.Size = new System.Drawing.Size(60, 20);
+            this._tbCooldown.Size = new System.Drawing.Size(79, 25);
             this._tbCooldown.TabIndex = 7;
             this._tbCooldown.TextChanged += new System.EventHandler(this.TbCooldownTextChanged);
             this._tbCooldown.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxKeyPress);
@@ -1143,6 +1216,7 @@
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer4.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer4.Name = "splitContainer4";
             // 
             // splitContainer4.Panel1
@@ -1154,8 +1228,9 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.splitContainer5);
-            this.splitContainer4.Size = new System.Drawing.Size(864, 244);
+            this.splitContainer4.Size = new System.Drawing.Size(1155, 322);
             this.splitContainer4.SplitterDistance = 346;
+            this.splitContainer4.SplitterWidth = 5;
             this.splitContainer4.TabIndex = 0;
             // 
             // _cbProcSpellFamilyTree
@@ -1167,8 +1242,9 @@
             this._cbProcSpellFamilyTree.FormattingEnabled = true;
             this._cbProcSpellFamilyTree.IntegralHeight = false;
             this._cbProcSpellFamilyTree.Location = new System.Drawing.Point(1, 2);
+            this._cbProcSpellFamilyTree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcSpellFamilyTree.Name = "_cbProcSpellFamilyTree";
-            this._cbProcSpellFamilyTree.Size = new System.Drawing.Size(344, 21);
+            this._cbProcSpellFamilyTree.Size = new System.Drawing.Size(342, 23);
             this._cbProcSpellFamilyTree.TabIndex = 1;
             this._cbProcSpellFamilyTree.SelectedIndexChanged += new System.EventHandler(this.TvFamilyTreeSelectedIndexChanged);
             // 
@@ -1180,11 +1256,12 @@
             this._tvFamilyTree.CheckBoxes = true;
             this._tvFamilyTree.ImageIndex = 0;
             this._tvFamilyTree.ImageList = this._ilPro;
-            this._tvFamilyTree.Location = new System.Drawing.Point(1, 23);
+            this._tvFamilyTree.Location = new System.Drawing.Point(1, 27);
+            this._tvFamilyTree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tvFamilyTree.Name = "_tvFamilyTree";
             this._tvFamilyTree.SelectedImageIndex = 0;
             this._tvFamilyTree.ShowNodeToolTips = true;
-            this._tvFamilyTree.Size = new System.Drawing.Size(344, 219);
+            this._tvFamilyTree.Size = new System.Drawing.Size(342, 292);
             this._tvFamilyTree.TabIndex = 0;
             this._tvFamilyTree.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.FamilyTreeAfterCheck);
             this._tvFamilyTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TvFamilyTreeAfterSelect);
@@ -1194,6 +1271,7 @@
             this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer5.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer5.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer5.Name = "splitContainer5";
             // 
             // splitContainer5.Panel1
@@ -1211,8 +1289,9 @@
             this.splitContainer5.Panel2.Controls.Add(this._cbProcSpellEffect);
             this.splitContainer5.Panel2.Controls.Add(this._cbProcSpellAura);
             this.splitContainer5.Panel2.Controls.Add(this._cbProcSpellFamilyName);
-            this.splitContainer5.Size = new System.Drawing.Size(514, 244);
-            this.splitContainer5.SplitterDistance = 244;
+            this.splitContainer5.Size = new System.Drawing.Size(804, 322);
+            this.splitContainer5.SplitterDistance = 533;
+            this.splitContainer5.SplitterWidth = 5;
             this.splitContainer5.TabIndex = 0;
             // 
             // _rtbProcSpellInfo
@@ -1221,8 +1300,9 @@
             this._rtbProcSpellInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this._rtbProcSpellInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this._rtbProcSpellInfo.Location = new System.Drawing.Point(0, 0);
+            this._rtbProcSpellInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._rtbProcSpellInfo.Name = "_rtbProcSpellInfo";
-            this._rtbProcSpellInfo.Size = new System.Drawing.Size(244, 244);
+            this._rtbProcSpellInfo.Size = new System.Drawing.Size(533, 322);
             this._rtbProcSpellInfo.TabIndex = 0;
             this._rtbProcSpellInfo.Text = "";
             // 
@@ -1238,11 +1318,12 @@
             this._lvProcSpellList.FullRowSelect = true;
             this._lvProcSpellList.GridLines = true;
             this._lvProcSpellList.HideSelection = false;
-            this._lvProcSpellList.Location = new System.Drawing.Point(2, 117);
+            this._lvProcSpellList.Location = new System.Drawing.Point(3, 135);
+            this._lvProcSpellList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._lvProcSpellList.MultiSelect = false;
             this._lvProcSpellList.Name = "_lvProcSpellList";
             this._lvProcSpellList.ShowItemToolTips = true;
-            this._lvProcSpellList.Size = new System.Drawing.Size(261, 124);
+            this._lvProcSpellList.Size = new System.Drawing.Size(258, 182);
             this._lvProcSpellList.TabIndex = 0;
             this._lvProcSpellList.UseCompatibleStateImageBehavior = false;
             this._lvProcSpellList.View = System.Windows.Forms.View.Details;
@@ -1263,9 +1344,10 @@
             // _bProcSearch
             // 
             this._bProcSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._bProcSearch.Location = new System.Drawing.Point(206, 2);
+            this._bProcSearch.Location = new System.Drawing.Point(186, 2);
+            this._bProcSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bProcSearch.Name = "_bProcSearch";
-            this._bProcSearch.Size = new System.Drawing.Size(54, 20);
+            this._bProcSearch.Size = new System.Drawing.Size(72, 23);
             this._bProcSearch.TabIndex = 5;
             this._bProcSearch.Text = "Search";
             this._bProcSearch.UseVisualStyleBackColor = true;
@@ -1275,9 +1357,10 @@
             // 
             this._tbProcSeach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._tbProcSeach.Location = new System.Drawing.Point(3, 3);
+            this._tbProcSeach.Location = new System.Drawing.Point(4, 3);
+            this._tbProcSeach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbProcSeach.Name = "_tbProcSeach";
-            this._tbProcSeach.Size = new System.Drawing.Size(197, 20);
+            this._tbProcSeach.Size = new System.Drawing.Size(172, 25);
             this._tbProcSeach.TabIndex = 4;
             this._tbProcSeach.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbSearchKeyDown);
             // 
@@ -1288,9 +1371,10 @@
             this._cbProcTarget2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcTarget2.FormattingEnabled = true;
             this._cbProcTarget2.IntegralHeight = false;
-            this._cbProcTarget2.Location = new System.Drawing.Point(144, 90);
+            this._cbProcTarget2.Location = new System.Drawing.Point(103, 104);
+            this._cbProcTarget2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcTarget2.Name = "_cbProcTarget2";
-            this._cbProcTarget2.Size = new System.Drawing.Size(119, 21);
+            this._cbProcTarget2.Size = new System.Drawing.Size(157, 23);
             this._cbProcTarget2.TabIndex = 3;
             this._cbProcTarget2.SelectedIndexChanged += new System.EventHandler(this.CbProcSpellFamilyNameSelectedIndexChanged);
             // 
@@ -1302,9 +1386,10 @@
             this._cbProcTarget1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcTarget1.FormattingEnabled = true;
             this._cbProcTarget1.IntegralHeight = false;
-            this._cbProcTarget1.Location = new System.Drawing.Point(3, 90);
+            this._cbProcTarget1.Location = new System.Drawing.Point(4, 104);
+            this._cbProcTarget1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcTarget1.Name = "_cbProcTarget1";
-            this._cbProcTarget1.Size = new System.Drawing.Size(132, 21);
+            this._cbProcTarget1.Size = new System.Drawing.Size(86, 23);
             this._cbProcTarget1.TabIndex = 3;
             this._cbProcTarget1.SelectedIndexChanged += new System.EventHandler(this.CbProcSpellFamilyNameSelectedIndexChanged);
             // 
@@ -1316,9 +1401,10 @@
             this._cbProcSpellEffect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcSpellEffect.FormattingEnabled = true;
             this._cbProcSpellEffect.IntegralHeight = false;
-            this._cbProcSpellEffect.Location = new System.Drawing.Point(3, 68);
+            this._cbProcSpellEffect.Location = new System.Drawing.Point(4, 78);
+            this._cbProcSpellEffect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcSpellEffect.Name = "_cbProcSpellEffect";
-            this._cbProcSpellEffect.Size = new System.Drawing.Size(260, 21);
+            this._cbProcSpellEffect.Size = new System.Drawing.Size(256, 23);
             this._cbProcSpellEffect.TabIndex = 3;
             this._cbProcSpellEffect.SelectedIndexChanged += new System.EventHandler(this.CbProcSpellFamilyNameSelectedIndexChanged);
             // 
@@ -1330,9 +1416,10 @@
             this._cbProcSpellAura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcSpellAura.FormattingEnabled = true;
             this._cbProcSpellAura.IntegralHeight = false;
-            this._cbProcSpellAura.Location = new System.Drawing.Point(3, 46);
+            this._cbProcSpellAura.Location = new System.Drawing.Point(4, 53);
+            this._cbProcSpellAura.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcSpellAura.Name = "_cbProcSpellAura";
-            this._cbProcSpellAura.Size = new System.Drawing.Size(260, 21);
+            this._cbProcSpellAura.Size = new System.Drawing.Size(256, 23);
             this._cbProcSpellAura.TabIndex = 2;
             this._cbProcSpellAura.SelectedIndexChanged += new System.EventHandler(this.CbProcSpellFamilyNameSelectedIndexChanged);
             // 
@@ -1344,9 +1431,10 @@
             this._cbProcSpellFamilyName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbProcSpellFamilyName.FormattingEnabled = true;
             this._cbProcSpellFamilyName.IntegralHeight = false;
-            this._cbProcSpellFamilyName.Location = new System.Drawing.Point(3, 24);
+            this._cbProcSpellFamilyName.Location = new System.Drawing.Point(4, 28);
+            this._cbProcSpellFamilyName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcSpellFamilyName.Name = "_cbProcSpellFamilyName";
-            this._cbProcSpellFamilyName.Size = new System.Drawing.Size(260, 21);
+            this._cbProcSpellFamilyName.Size = new System.Drawing.Size(256, 23);
             this._cbProcSpellFamilyName.TabIndex = 1;
             this._cbProcSpellFamilyName.SelectedIndexChanged += new System.EventHandler(this.CbProcSpellFamilyNameSelectedIndexChanged);
             // 
@@ -1358,9 +1446,11 @@
             this._lvProcAdditionalInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this._lvProcAdditionalInfo.FullRowSelect = true;
             this._lvProcAdditionalInfo.GridLines = true;
+            this._lvProcAdditionalInfo.HideSelection = false;
             this._lvProcAdditionalInfo.Location = new System.Drawing.Point(0, 0);
+            this._lvProcAdditionalInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._lvProcAdditionalInfo.Name = "_lvProcAdditionalInfo";
-            this._lvProcAdditionalInfo.Size = new System.Drawing.Size(864, 64);
+            this._lvProcAdditionalInfo.Size = new System.Drawing.Size(1155, 74);
             this._lvProcAdditionalInfo.SmallImageList = this._ilPro;
             this._lvProcAdditionalInfo.TabIndex = 0;
             this._lvProcAdditionalInfo.UseCompatibleStateImageBehavior = false;
@@ -1381,9 +1471,10 @@
             // 
             this._tpSqlData.Controls.Add(this.groupBox3);
             this._tpSqlData.Controls.Add(this.groupBox2);
-            this._tpSqlData.Location = new System.Drawing.Point(4, 22);
+            this._tpSqlData.Location = new System.Drawing.Point(4, 25);
+            this._tpSqlData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tpSqlData.Name = "_tpSqlData";
-            this._tpSqlData.Size = new System.Drawing.Size(864, 557);
+            this._tpSqlData.Size = new System.Drawing.Size(1155, 647);
             this._tpSqlData.TabIndex = 3;
             this._tpSqlData.Text = "Sql Data";
             this._tpSqlData.UseVisualStyleBackColor = true;
@@ -1410,18 +1501,21 @@
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this._cbSqlSpellFamily);
             this.groupBox3.Controls.Add(this._bSelect);
-            this.groupBox3.Location = new System.Drawing.Point(6, 3);
+            this.groupBox3.Location = new System.Drawing.Point(8, 3);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(855, 85);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox3.Size = new System.Drawing.Size(1140, 98);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
             // _cbBinaryCompare
             // 
             this._cbBinaryCompare.AutoSize = true;
-            this._cbBinaryCompare.Location = new System.Drawing.Point(752, 55);
+            this._cbBinaryCompare.Location = new System.Drawing.Point(1003, 63);
+            this._cbBinaryCompare.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbBinaryCompare.Name = "_cbBinaryCompare";
-            this._cbBinaryCompare.Size = new System.Drawing.Size(100, 17);
+            this._cbBinaryCompare.Size = new System.Drawing.Size(141, 19);
             this._cbBinaryCompare.TabIndex = 8;
             this._cbBinaryCompare.Text = "Binary Compare";
             this._cbBinaryCompare.UseVisualStyleBackColor = true;
@@ -1429,69 +1523,77 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 56);
+            this.label9.Location = new System.Drawing.Point(8, 65);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.Size = new System.Drawing.Size(63, 15);
             this.label9.TabIndex = 7;
             this.label9.Text = "Manual:";
             // 
             // _tbSqlManual
             // 
-            this._tbSqlManual.Location = new System.Drawing.Point(81, 53);
+            this._tbSqlManual.Location = new System.Drawing.Point(108, 61);
+            this._tbSqlManual.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSqlManual.Name = "_tbSqlManual";
-            this._tbSqlManual.Size = new System.Drawing.Size(272, 20);
+            this._tbSqlManual.Size = new System.Drawing.Size(361, 25);
             this._tbSqlManual.TabIndex = 6;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 20);
+            this.label8.Location = new System.Drawing.Point(8, 23);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 13);
+            this.label8.Size = new System.Drawing.Size(103, 15);
             this.label8.TabIndex = 5;
             this.label8.Text = "Family Name:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(571, 56);
+            this.label12.Location = new System.Drawing.Point(761, 65);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.Size = new System.Drawing.Size(71, 15);
             this.label12.TabIndex = 5;
             this.label12.Text = "Proc Ex:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(376, 56);
+            this.label11.Location = new System.Drawing.Point(501, 65);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.Size = new System.Drawing.Size(47, 15);
             this.label11.TabIndex = 5;
             this.label11.Text = "Proc:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(571, 20);
+            this.label10.Location = new System.Drawing.Point(761, 23);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.Size = new System.Drawing.Size(63, 15);
             this.label10.TabIndex = 5;
             this.label10.Text = "School:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(376, 20);
+            this.label7.Location = new System.Drawing.Point(501, 23);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.Size = new System.Drawing.Size(79, 15);
             this.label7.TabIndex = 5;
             this.label7.Text = "Spell ID:";
             // 
             // _bSqlProcEx
             // 
-            this._bSqlProcEx.Location = new System.Drawing.Point(718, 51);
+            this._bSqlProcEx.Location = new System.Drawing.Point(957, 59);
+            this._bSqlProcEx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSqlProcEx.Name = "_bSqlProcEx";
-            this._bSqlProcEx.Size = new System.Drawing.Size(28, 23);
+            this._bSqlProcEx.Size = new System.Drawing.Size(37, 27);
             this._bSqlProcEx.TabIndex = 4;
             this._bSqlProcEx.Text = "...";
             this._bSqlProcEx.UseVisualStyleBackColor = true;
@@ -1499,9 +1601,10 @@
             // 
             // _bSqlProc
             // 
-            this._bSqlProc.Location = new System.Drawing.Point(535, 51);
+            this._bSqlProc.Location = new System.Drawing.Point(713, 59);
+            this._bSqlProc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSqlProc.Name = "_bSqlProc";
-            this._bSqlProc.Size = new System.Drawing.Size(28, 23);
+            this._bSqlProc.Size = new System.Drawing.Size(37, 27);
             this._bSqlProc.TabIndex = 4;
             this._bSqlProc.Text = "...";
             this._bSqlProc.UseVisualStyleBackColor = true;
@@ -1509,9 +1612,10 @@
             // 
             // _bSqlSchool
             // 
-            this._bSqlSchool.Location = new System.Drawing.Point(718, 15);
+            this._bSqlSchool.Location = new System.Drawing.Point(957, 17);
+            this._bSqlSchool.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSqlSchool.Name = "_bSqlSchool";
-            this._bSqlSchool.Size = new System.Drawing.Size(28, 23);
+            this._bSqlSchool.Size = new System.Drawing.Size(37, 27);
             this._bSqlSchool.TabIndex = 4;
             this._bSqlSchool.Text = "...";
             this._bSqlSchool.UseVisualStyleBackColor = true;
@@ -1519,30 +1623,34 @@
             // 
             // _tbSqlProcEx
             // 
-            this._tbSqlProcEx.Location = new System.Drawing.Point(620, 53);
+            this._tbSqlProcEx.Location = new System.Drawing.Point(827, 61);
+            this._tbSqlProcEx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSqlProcEx.Name = "_tbSqlProcEx";
-            this._tbSqlProcEx.Size = new System.Drawing.Size(92, 20);
+            this._tbSqlProcEx.Size = new System.Drawing.Size(121, 25);
             this._tbSqlProcEx.TabIndex = 3;
             // 
             // _tbSqlProc
             // 
-            this._tbSqlProc.Location = new System.Drawing.Point(429, 53);
+            this._tbSqlProc.Location = new System.Drawing.Point(572, 61);
+            this._tbSqlProc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSqlProc.Name = "_tbSqlProc";
-            this._tbSqlProc.Size = new System.Drawing.Size(100, 20);
+            this._tbSqlProc.Size = new System.Drawing.Size(132, 25);
             this._tbSqlProc.TabIndex = 3;
             // 
             // _tbSqlSchool
             // 
-            this._tbSqlSchool.Location = new System.Drawing.Point(620, 17);
+            this._tbSqlSchool.Location = new System.Drawing.Point(827, 20);
+            this._tbSqlSchool.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._tbSqlSchool.Name = "_tbSqlSchool";
-            this._tbSqlSchool.Size = new System.Drawing.Size(92, 20);
+            this._tbSqlSchool.Size = new System.Drawing.Size(121, 25);
             this._tbSqlSchool.TabIndex = 3;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(429, 17);
+            this.textBox1.Location = new System.Drawing.Point(572, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 25);
             this.textBox1.TabIndex = 2;
             // 
             // _cbSqlSpellFamily
@@ -1551,17 +1659,19 @@
             this._cbSqlSpellFamily.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cbSqlSpellFamily.FormattingEnabled = true;
             this._cbSqlSpellFamily.IntegralHeight = false;
-            this._cbSqlSpellFamily.Location = new System.Drawing.Point(81, 17);
+            this._cbSqlSpellFamily.Location = new System.Drawing.Point(108, 20);
+            this._cbSqlSpellFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbSqlSpellFamily.Name = "_cbSqlSpellFamily";
-            this._cbSqlSpellFamily.Size = new System.Drawing.Size(272, 21);
+            this._cbSqlSpellFamily.Size = new System.Drawing.Size(361, 23);
             this._cbSqlSpellFamily.TabIndex = 1;
             // 
             // _bSelect
             // 
             this._bSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._bSelect.Location = new System.Drawing.Point(1430, 10);
+            this._bSelect.Location = new System.Drawing.Point(1907, 12);
+            this._bSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSelect.Name = "_bSelect";
-            this._bSelect.Size = new System.Drawing.Size(75, 23);
+            this._bSelect.Size = new System.Drawing.Size(100, 27);
             this._bSelect.TabIndex = 0;
             this._bSelect.Text = "Select";
             this._bSelect.UseVisualStyleBackColor = true;
@@ -1573,16 +1683,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.splitContainer6);
-            this.groupBox2.Location = new System.Drawing.Point(0, 94);
+            this.groupBox2.Location = new System.Drawing.Point(0, 108);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(864, 463);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox2.Size = new System.Drawing.Size(1152, 537);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
             // splitContainer6
             // 
             this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer6.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer6.Location = new System.Drawing.Point(4, 21);
+            this.splitContainer6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer6.Name = "splitContainer6";
             this.splitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -1596,8 +1709,9 @@
             this.splitContainer6.Panel2.Controls.Add(this._rtbSqlLog);
             this.splitContainer6.Panel2.Controls.Add(this._bSqlToBase);
             this.splitContainer6.Panel2.Controls.Add(this._bSqlSave);
-            this.splitContainer6.Size = new System.Drawing.Size(858, 444);
-            this.splitContainer6.SplitterDistance = 229;
+            this.splitContainer6.Size = new System.Drawing.Size(1144, 513);
+            this.splitContainer6.SplitterDistance = 264;
+            this.splitContainer6.SplitterWidth = 5;
             this.splitContainer6.TabIndex = 0;
             // 
             // _lvDataList
@@ -1620,9 +1734,10 @@
             this._lvDataList.GridLines = true;
             this._lvDataList.HideSelection = false;
             this._lvDataList.Location = new System.Drawing.Point(0, 0);
+            this._lvDataList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._lvDataList.MultiSelect = false;
             this._lvDataList.Name = "_lvDataList";
-            this._lvDataList.Size = new System.Drawing.Size(858, 229);
+            this._lvDataList.Size = new System.Drawing.Size(1144, 264);
             this._lvDataList.TabIndex = 0;
             this._lvDataList.UseCompatibleStateImageBehavior = false;
             this._lvDataList.View = System.Windows.Forms.View.Details;
@@ -1695,17 +1810,19 @@
             this._rtbSqlLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._rtbSqlLog.Location = new System.Drawing.Point(0, 32);
+            this._rtbSqlLog.Location = new System.Drawing.Point(0, 37);
+            this._rtbSqlLog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._rtbSqlLog.Name = "_rtbSqlLog";
-            this._rtbSqlLog.Size = new System.Drawing.Size(858, 182);
+            this._rtbSqlLog.Size = new System.Drawing.Size(1143, 210);
             this._rtbSqlLog.TabIndex = 3;
             this._rtbSqlLog.Text = "";
             // 
             // _bSqlToBase
             // 
-            this._bSqlToBase.Location = new System.Drawing.Point(84, 3);
+            this._bSqlToBase.Location = new System.Drawing.Point(112, 3);
+            this._bSqlToBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSqlToBase.Name = "_bSqlToBase";
-            this._bSqlToBase.Size = new System.Drawing.Size(75, 23);
+            this._bSqlToBase.Size = new System.Drawing.Size(100, 27);
             this._bSqlToBase.TabIndex = 2;
             this._bSqlToBase.Text = "To DB";
             this._bSqlToBase.UseVisualStyleBackColor = true;
@@ -1713,9 +1830,10 @@
             // 
             // _bSqlSave
             // 
-            this._bSqlSave.Location = new System.Drawing.Point(3, 3);
+            this._bSqlSave.Location = new System.Drawing.Point(4, 3);
+            this._bSqlSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bSqlSave.Name = "_bSqlSave";
-            this._bSqlSave.Size = new System.Drawing.Size(75, 23);
+            this._bSqlSave.Size = new System.Drawing.Size(100, 27);
             this._bSqlSave.TabIndex = 1;
             this._bSqlSave.Text = "Save";
             this._bSqlSave.UseVisualStyleBackColor = true;
@@ -1726,9 +1844,10 @@
             this._cbProcFlag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._cbProcFlag.Appearance = System.Windows.Forms.Appearance.Button;
             this._cbProcFlag.AutoSize = true;
-            this._cbProcFlag.Location = new System.Drawing.Point(743, 1);
+            this._cbProcFlag.Location = new System.Drawing.Point(989, 1);
+            this._cbProcFlag.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._cbProcFlag.Name = "_cbProcFlag";
-            this._cbProcFlag.Size = new System.Drawing.Size(59, 23);
+            this._cbProcFlag.Size = new System.Drawing.Size(81, 25);
             this._cbProcFlag.TabIndex = 2;
             this._cbProcFlag.Text = "ProcFlag";
             this._cbProcFlag.UseVisualStyleBackColor = true;
@@ -1738,9 +1857,10 @@
             // _bWrite
             // 
             this._bWrite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._bWrite.Location = new System.Drawing.Point(686, 1);
+            this._bWrite.Location = new System.Drawing.Point(915, 1);
+            this._bWrite.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bWrite.Name = "_bWrite";
-            this._bWrite.Size = new System.Drawing.Size(51, 23);
+            this._bWrite.Size = new System.Drawing.Size(68, 27);
             this._bWrite.TabIndex = 3;
             this._bWrite.Text = "Write";
             this._bWrite.UseVisualStyleBackColor = true;
@@ -1750,9 +1870,10 @@
             // _bLevelScaling
             // 
             this._bLevelScaling.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._bLevelScaling.Location = new System.Drawing.Point(808, 1);
+            this._bLevelScaling.Location = new System.Drawing.Point(1077, 1);
+            this._bLevelScaling.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this._bLevelScaling.Name = "_bLevelScaling";
-            this._bLevelScaling.Size = new System.Drawing.Size(60, 23);
+            this._bLevelScaling.Size = new System.Drawing.Size(80, 27);
             this._bLevelScaling.TabIndex = 4;
             this._bLevelScaling.Text = "Scaling";
             this._bLevelScaling.UseVisualStyleBackColor = true;
@@ -1760,9 +1881,9 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 629);
+            this.ClientSize = new System.Drawing.Size(1163, 726);
             this.Controls.Add(this._bLevelScaling);
             this.Controls.Add(this._bWrite);
             this.Controls.Add(this._cbProcFlag);
@@ -1771,7 +1892,8 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(880, 585);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(1167, 668);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
